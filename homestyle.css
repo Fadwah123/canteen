@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&family=Noto+Sans+Malayalam:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Chilanka&family=Noto+Sans+Malayalam:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mukta:wght@200;300;400;500;600;700;800&family=Schoolbell&display=swap');
+*{
+    margin: 0;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+   
+}
+section{
+    background: url(front.png)no-repeat center center ;
+    
+    background-size: 1000px 600px;   
+}
+header{
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+    background: #E7F0DC;
+    box-sizing:border-box;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+
+}
+.logo{
+    color:orangered;
+    
+    height:50px;
+    font-size:36px;
+    line-height: 60px;
+    padding: 0 20px;
+   
+    text-align: center;
+    box-sizing:border-box;
+    float: left;
+    font-weight: 900;
+    text-decoration: none;
+
+}
+nav{
+    float: right;
+}
+
+.clearfix{
+    clear: both;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #262626;
+}
+nav ul li a:active,nav ul li a:hover{
+    background: orangered;
+    color:#fff;
+    transition: 0.5s;
+}
+.first{
+    font-family: "Chilanka", cursive;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 200px;
+  padding-left: 90px;
+  padding-top: 200px;
+  text-align: left;
+ 
+}
+.second{
+    font-family: "Chilanka", cursive;
+    font-weight: 900;
+    font-style: normal;
+  font-size: 110px;
+  color: orangered;
+  padding-left: 150px;
+  
+}
+
+
+.column {
+    float: left;
+    width: 15.33%;
+    padding: 5px;
+    margin: 10px; /* Adjust the margin value as desired */
+    border-radius: 4px;
+    box-shadow: 0 20px 5px rgba(0, 0, 0.3, 0.3);
+    text-align:center;
+    font-family: "Chilanka", cursive;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease,box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+  
+  .row {
+    padding-left: 100px;
+    display: flex;
+    gap: 15px; /* Adjust the gap value as desired */
+    
+}
+
+    
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    
+  }
+
+.listp{
+    text-align:center;
+  
+    height:50px;
+    font-size:36px;
+    box-sizing:border-box;
+    
+    font-weight: 900;
+  
+    max-width: 1500px;
+    margin: 20px auto;
+    padding: 10px;
+    background: #E7F0DC;
+    box-sizing:border-box;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    padding-bottom:50px;
+    color: #1c3a06;
+    font-family: "Syne Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+    
+  }
+  .column button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #597445;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    font-family: "Mukta", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .column button:hover {
+    background-color: #214220;
+    
+  }
+  .column:hover {
+    transform: scale(1.05); /* Slightly enlarge the item */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Add a shadow */
+}
+
+.column img {
+    transition: transform 0.3s ease;
+}
+
+.column:hover img {
+    transform: scale(1.1); /* Zoom the image slightly on hover */
+}
+
+/* Additional styling for smooth transition */
+.column h1, .column p {
+    transition: color 0.3s ease;
+}
+
+.column:hover h1, .column:hover p {
+    color: #597445; /* Change text color on hover */
+    transform: scale(0.80); /* Shrink text to 95% of its original size */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+footer {
+    background-color: #597445; /* Light background color */
+    text-align: center; /* Center align the text */
+    padding: 15px 0; /* Vertical padding */
+    position: relative; /* Relative positioning */
+    bottom: 0; /* Stick to the bottom of the page */
+    width: 100%; /* Full width */
+    font-family: "Poppins", sans-serif; /* Use a font-family */
+    font-size: 14px; /* Font size */
+    color: white;
+}
+
+.hero .slide{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap:2rem;
+    margin-bottom: 4rem;
+ }
+ 
+ .hero .slide .image{
+    flex:1 1 40rem;
+ }
+ 
+ .hero .slide .image img{
+    width: 100%;
+ }
+ 
+ .hero .slide .content{
+    flex:1 1 40rem;
+    text-align: center;
+ }
+ 
+ .hero .slide .content span{
+    font-size: 2.5rem;
+    color:var(--light-color);
+ }
+ 
+ .hero .slide .content h3{
+    margin:1rem 0;
+    font-size: 6rem;
+    color:var(--black);
+    text-transform: capitalize;
+ }
+ 
+ .swiper-pagination-bullet-active{
+    background-color: var(--yellow);
+ }
+
+
+@media(max-width:1200px){
+    header{
+        margin:20px;
+
+    }
+ 
+}
+@media(max-width:768px){
+   
+    .menu-toggle{
+        display: block;
+        width: 40px;
+        height: 40px;
+      
+        float: right;
+        cursor: pointer;
+        text-align: center;
+        font-size: 30px;
+        color:orangered;
+
+
+    }
+    .menu-toggle:before{
+        content: '\f0c9';
+        font-family: fontawesome;
+        line-height: 40px;
+    }
+    .menu-toggle.active:before{
+        content: '\f00d';
+        
+    }
+    nav{
+        display: none;
+    }
+    nav.active{
+        display: block;
+        width: 100%;
+    }
+    nav.active ul{
+        display: block;
+        width: 100%;
+    }
+    nav.active ul li a{
+     margin: 0;
+    }
+    footer {
+    background-color: #f9f9f9; /* Light background color */
+    text-align: center; /* Center align the text */
+    padding: 10px 0; /* Vertical padding */
+    position: relative; /* Relative positioning */
+    bottom: 0; /* Stick to the bottom of the page */
+    width: 100%; /* Full width */
+    font-family: "Poppins", sans-serif; /* Use a font-family */
+    font-size: 14px; /* Font size */
+}
+.hero .slide .content h3{
+    font-size: 5rem;
+ }
+}
